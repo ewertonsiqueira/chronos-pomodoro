@@ -1,6 +1,6 @@
-/* .heading {
-  background: red;
-  color: white;
-  padding: 16px;
-  border-radius: 8px;
-} */
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
