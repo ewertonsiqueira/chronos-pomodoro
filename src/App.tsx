@@ -1,13 +1,13 @@
-import './styles/theme.css';
-import './styles/global.css';
+import './styles/theme.css'
+import './styles/global.css'
 
-import { Container } from './components/Container';
-import { Logo } from './components/Logo';
-import { Menu } from './components/Menu';
-import { Timer } from './components/Timer';
-import { DefaultInput } from './components/DefaultInput';
+import { Container } from './components/Container'
+import { Logo } from './components/Logo'
+import { Menu } from './components/Menu'
+import { Timer } from './components/Timer'
+import { DefaultInput } from './components/DefaultInput'
 
-export function  App () {
+export function App () {
   return (
     <>
       <Container>
@@ -17,7 +17,7 @@ export function  App () {
       <Container>
         <Menu />
       </Container>
-      
+
       <Container>
         <Timer />
       </Container>
@@ -25,22 +25,22 @@ export function  App () {
       <Container>
         <form action="" className="form">
           <div className="formRow">
-           <DefaultInput type='Teste'/>
+            <DefaultInput labelText='Qualquer coisa' id='meuInput' />
           </div>
 
           <div className="formRow">
-           <p>
+            <p>
             Lorem ipsum dolor sit amet.
-           </p>
+            </p>
           </div>
 
           <div className="formRow">
-           <p>
+            <p>
             Circlos
-           </p>
-           <p>
+            </p>
+            <p>
             0 0 0 0
-           </p>
+            </p>
           </div>
 
           <div className="formRow">
@@ -51,5 +51,5 @@ export function  App () {
         </form>
       </Container>
     </>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import styles from './styles.module.css';
-import { HistoryIcon, HouseIcon, Settings2Icon, SunIcon, TimerIcon } from 'lucide-react';
+import styles from './styles.module.css'
+import { HistoryIcon, HouseIcon, Settings2Icon, SunIcon } from 'lucide-react'
 
 export function Menu() {
   return (
@@ -21,5 +21,5 @@ export function Menu() {
       </a>
 
     </nav>
-  );
+  )
 }
