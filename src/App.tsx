@@ -2,8 +2,9 @@ import './styles/theme.css';
 import './styles/global.css';
 
 import { Container } from './components/Container';
-import { Heading } from './components/Heading';
 import { Logo } from './components/Logo';
+import { Menu } from './components/Menu';
+import { Timer } from './components/Timer';
 
 export function  App () {
   return (
@@ -11,11 +12,13 @@ export function  App () {
       <Container>
         <Logo />
       </Container>
+      
       <Container>
-        <Heading>Title 2</Heading>
+        <Menu />
       </Container>
+      
       <Container>
-        <Heading>Title 3</Heading>
+        <Timer />
       </Container>
     </>
   );
