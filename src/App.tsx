@@ -6,6 +6,7 @@ import { Logo } from './components/Logo'
 import { Menu } from './components/Menu'
 import { Timer } from './components/Timer'
 import { DefaultInput } from './components/DefaultInput'
+import { Circles } from './components/Circles'
 
 export function App () {
   return (
@@ -25,7 +26,7 @@ export function App () {
       <Container>
         <form action="" className="form">
           <div className="formRow">
-            <DefaultInput labelText='Qualquer coisa' id='meuInput' />
+            <DefaultInput labelText='Qualquer coisa' id='meuInput' placeholder='Digite algo' />
           </div>
 
           <div className="formRow">
@@ -35,12 +36,7 @@ export function App () {
           </div>
 
           <div className="formRow">
-            <p>
-            Circlos
-            </p>
-            <p>
-            0 0 0 0
-            </p>
+            <Circles></Circles>
           </div>
 
           <div className="formRow">
