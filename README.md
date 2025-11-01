@@ -1,73 +1,157 @@
-# React + TypeScript + Vite
+# ⏰ Chronos Pomodoro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+![Pomodoro Timer](https://img.shields.io/badge/Technique-Pomodoro-red?style=for-the-badge&logo=timer)
+![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?style=for-the-badge&logo=typescript)
+![Vite](https://img.shields.io/badge/Vite-7.1.7-646CFF?style=for-the-badge&logo=vite)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Um aplicativo moderno de Pomodoro Timer para aumentar sua produtividade**
 
-## React Compiler
+[🚀 Demo](#) • [📖 Documentação](#como-usar) • [🔧 Instalação](#instalação)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎯 Sobre o Projeto
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+O **Chronos Pomodoro** é uma aplicação web moderna baseada na famosa Técnica Pomodoro, desenvolvida com as mais recentes tecnologias web. Ajude a manter o foco e aumentar a produtividade através de ciclos de trabalho e descanso bem estruturados.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### ✨ Funcionalidades
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- ⏱️ **Timer Pomodoro** - Ciclos personalizáveis de trabalho e descanso
+- 🎵 **Notificações Sonoras** - Alertas quando os ciclos terminam
+- 📊 **Estatísticas** - Acompanhe seu progresso e produtividade
+- 🎨 **Interface Moderna** - Design clean e responsivo
+- 🌙 **Modo Escuro** - Para reduzir o cansaço visual
+- 💾 **Salvamento Local** - Suas configurações são mantidas
+
+## 🛠️ Tecnologias Utilizadas
+
+- **React 19.1.1** - Biblioteca para construção da interface
+- **TypeScript 5.9.3** - Tipagem estática para JavaScript
+- **Vite 7.1.7** - Build tool rápida e moderna
+- **Lucide React** - Ícones modernos e customizáveis
+- **CSS Modules** - Estilização com escopo modular
+- **ESLint** - Linting e padronização de código
+
+## 🚀 Instalação
+
+### Pré-requisitos
+
+- Node.js 18+
+- npm ou yarn
+
+### Passos
+
+1. **Clone o repositório**
+
+   ```bash
+   git clone https://github.com/ewertonsiqueira/chronos-pomodoro.git
+   cd chronos-pomodoro
+   ```
+
+2. **Instale as dependências**
+
+   ```bash
+   npm install
+   ```
+
+3. **Execute o projeto em desenvolvimento**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Acesse no navegador**
+   ```
+   http://localhost:5173
+   ```
+
+## 📖 Como Usar
+
+### Técnica Pomodoro Tradicional
+
+1. **25 minutos** de trabalho focado
+2. **5 minutos** de pausa curta
+3. Repita o ciclo **4 vezes**
+4. Faça uma **pausa longa de 15-30 minutos**
+
+### No Chronos Pomodoro
+
+1. Clique em "Iniciar" para começar o timer
+2. Trabalhe com foco durante o período ativo
+3. Descanse quando o timer indicar
+4. Acompanhe seu progresso nas estatísticas
+
+## 🎨 Screenshots
+
+<div align="center">
+
+| Timer Ativo                                                           | Pausa                                                                 | Estatísticas                                                          |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| ![Timer](https://via.placeholder.com/200x150/FF6B6B/white?text=Timer) | ![Pausa](https://via.placeholder.com/200x150/4ECDC4/white?text=Break) | ![Stats](https://via.placeholder.com/200x150/45B7D1/white?text=Stats) |
+
+</div>
+
+## 🔧 Scripts Disponíveis
+
+| Script            | Descrição                            |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Inicia o servidor de desenvolvimento |
+| `npm run build`   | Cria a build de produção             |
+| `npm run preview` | Visualiza a build de produção        |
+| `npm run lint`    | Executa o linting do código          |
+
+## 📁 Estrutura do Projeto
+
+```
+chronos-pomodoro/
+├── 📁 public/           # Arquivos estáticos
+├── 📁 src/
+│   ├── 📁 components/   # Componentes React
+│   │   ├── Container/   # Container principal
+│   │   ├── Timer/       # Componente do timer
+│   │   ├── Menu/        # Menu de navegação
+│   │   └── ...
+│   ├── 📁 styles/       # Estilos globais
+│   ├── App.tsx          # Componente principal
+│   └── main.tsx         # Ponto de entrada
+├── 📄 package.json      # Dependências e scripts
+├── 📄 tsconfig.json     # Configuração TypeScript
+├── 📄 vite.config.ts    # Configuração Vite
+└── 📄 eslint.config.js  # Configuração ESLint
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🤝 Contribuindo
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Contribuições são sempre bem-vindas! Para contribuir:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Fork** o projeto
+2. Crie uma **branch** para sua feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um **Pull Request**
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👤 Autor
+
+**Ewerton Siqueira**
+
+- GitHub: [@ewertonsiqueira](https://github.com/ewertonsiqueira)
+- LinkedIn: [ewerton-siqueira](https://linkedin.com/in/ewerton-siqueira)
+
+---
+
+<div align="center">
+
+**⭐ Se este projeto te ajudou, deixe uma estrela!**
+
+Feito com ❤️ e ☕ por [Ewerton Siqueira](https://github.com/ewertonsiqueira)
+
+</div>
